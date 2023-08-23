@@ -1,0 +1,32 @@
+body {
+	display: flex;
+	justify-content: center;
+}
+
+section {
+	display: flex;
+	width: 900px;
+	height: 300px;
+}
+
+div {
+	height: 100%;
+	width: 33%;
+}
+
+#aqua {
+	background-color: aqua;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#pink {
+	background-color: pink;
+}
+
+/* Flex container should be centred on the page
+Flex container should be 900px wide, 300px tall
+Use percentages for the height and width of the card
+Use ids to color the card blocks */
