@@ -16,6 +16,7 @@ h2 {
 h4 {
 	color: red;
 	text-decoration: underline;
+	font-weight: 100;
 }
 
 li {
