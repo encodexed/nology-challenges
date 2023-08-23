@@ -1,0 +1,33 @@
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div {
+	height: 250px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1px;
+}
+
+.lightblue {
+	background-color: lightblue;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.hotpink {
+	background-color: hotpink;
+}
+
+.red {
+	background-color: red;
+}
+
+.mint {
+	background-color: #99ff99;
+}
