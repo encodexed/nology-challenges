@@ -1,0 +1,62 @@
+body {
+	border: 2px solid black;
+}
+
+div {
+	width: 180px;
+	height: 180px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	justify-content: center;
+	gap: 10px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.lightblue {
+	background-color: lightblue;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.hotpink {
+	background-color: hotpink;
+}
+
+.earth {
+	background-color: #b3442b;
+}
+
+.mint {
+	background-color: #99ff99;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.grey {
+	background-color: lightgrey;
+}
+
+.very-lightblue {
+	background-color: #cdfffa;
+}
+
+.blue {
+	background-color: #8aa5ff;
+}
