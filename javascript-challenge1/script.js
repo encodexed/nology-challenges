@@ -3,6 +3,8 @@ console.log(
 );
 
 function oddsAndEvens(n) {
+	// let n = 4;
+
 	if (parseInt(n)) {
 		if (n % 2 === 1) {
 			console.log(`${n} is odd!`);
@@ -15,6 +17,9 @@ function oddsAndEvens(n) {
 }
 
 function comparingNumbers(x, y) {
+	// let x = 1;
+	// let y = 1;
+
 	if (x > y) {
 		console.log(`${x} is greater than ${y}`);
 	} else if (x === y) {
@@ -27,6 +32,8 @@ function comparingNumbers(x, y) {
 }
 
 function userInputType(input) {
+	// let input = "text";
+
 	// do string first to weed out NaNs
 	if (typeof input === "string") {
 		console.log(input);
