@@ -107,3 +107,15 @@ function removeVowelsBonus(str) {
 
 	return newStr;
 }
+
+// Great way by Zad
+
+function removeVowelsBetter(str) {
+	let newStr = "";
+
+	for (let i = 0; i < str.length; i++) {
+		if (!"aeiouAEIOU".includes(str[i])) {
+			newStr += str[i];
+		}
+	}
+}
