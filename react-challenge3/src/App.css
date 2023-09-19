@@ -1,0 +1,14 @@
+* {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+html {
+	background-color: lightblue;
+}
