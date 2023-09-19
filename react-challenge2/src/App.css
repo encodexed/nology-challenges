@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+}
+
+.bg-grey {
+	background-color: grey;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.text-white {
+	color: white;
+}
+
+.card {
+	width: 300px;
+
+	& div {
+		padding: 5px;
+	}
+
+	& h2 {
+		text-align: center;
+	}
+
+	& ul {
+		list-style-type: none;
+	}
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
