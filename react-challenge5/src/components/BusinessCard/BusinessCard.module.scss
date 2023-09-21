@@ -1,0 +1,25 @@
+.card {
+	width: 800px;
+	height: 450px;
+	background-color: white;
+	color: black;
+	display: flex;
+}
+
+.image {
+	width: 50%;
+	object-fit: cover;
+}
+
+.text {
+	margin-top: 40px;
+	text-align: center;
+	width: 50%;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+
+	&__first_name {
+		margin-bottom: 0px;
+	}
+}
