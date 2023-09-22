@@ -1,9 +1,17 @@
+p {
+	margin: 0;
+}
+
 .card {
 	width: 800px;
 	height: 450px;
-	background-color: white;
+	background-color: #eafffb;
 	color: black;
 	display: flex;
+}
+
+div {
+	margin-bottom: 30px;
 }
 
 .image {
@@ -18,8 +26,13 @@
 	padding: 8px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 
 	&__first_name {
-		margin-bottom: 0px;
+		margin-bottom: 10px;
+	}
+
+	&__business_name {
+		font-weight: bold;
 	}
 }

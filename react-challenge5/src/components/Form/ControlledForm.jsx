@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useState, useContext } from "react";
 import styles from "./ControlledForm.module.scss";
+import { InputContext } from "../FormInputProvider/FormInputProvider";
 
-const ControlledForm = ({ handleInput }) => {
+const ControlledForm = () => {
 	const [formInput, setFormInput] = useState({
 		firstName: "",
 		lastName: "",
@@ -13,14 +14,30 @@ const ControlledForm = ({ handleInput }) => {
 		businessAddress: "",
 	});
 
+	const { handleInput } = useContext(InputContext);
+
 	const inputHandler = (e) => {
-		setFormInput({ ...formInput, [e.target.name]: e.target.value });
-		handleInput({ ...formInput, [e.target.name]: e.target.value });
+		const newFormObj = { ...formInput, [e.target.name]: e.target.value };
+		setFormInput(newFormObj);
+		handleInput(newFormObj);
+	};
+
+	const imageInputHandler = (e) => {
+		const selectedImage = e.target.files[0];
+		const newFormObj = {
+			...formInput,
+			imageUrl: URL.createObjectURL(selectedImage),
+		};
+		setFormInput(newFormObj);
+		handleInput(newFormObj);
 	};
 
 	return (
 		<div className={styles.form_wrapper}>
 			<form>
+				<div>
+					<input type='file' onChange={imageInputHandler} />
+				</div>
 				<div>
 					<label htmlFor='firstName'>First Name: </label>
 					<input
