@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-class Main {
-  public static void main(String[] args) {
+public class Challenge1 {
+    public static void main(String[] args) {
     byte someByte = 127;
 		short someShort = 20_000;
 		int someInt = 400_000;

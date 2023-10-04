@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Challenge2 {
 
 	public static void main(String[] args) {		
 		// Challenge: Positive or Negative?
