@@ -8,8 +8,7 @@ public class Methods {
   }
 
   public static String firstName(String fullName) {
-    String[] names = fullName.split(" ");
-    return names[0];
+    return fullName.split(" ")[0];
   }
 
   public static String dateFormatter(long seconds) {
@@ -34,7 +33,7 @@ public class Methods {
     return String.format("%s%s%s", hoursStr, minutesStr, secondsStr);
   }
   
-  public static String dataFormatter(long seconds, long minutes) {
+  public static String dateFormatter(long seconds, long minutes) {
     long totalSeconds = seconds + (minutes * 60);
     return dateFormatter(totalSeconds);
   }
