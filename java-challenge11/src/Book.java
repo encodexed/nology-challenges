@@ -18,18 +18,14 @@ public class Book {
   }
 
   public static List<String> getUppercaseBookNames(Book[] books) {
-    Stream<String> booksStream = Stream.of(books)
-        .map(book ->  book.title.toUpperCase());
-
-    return booksStream.collect(Collectors.toList());
+    return Stream.of(books)
+        .map(book ->  book.title.toUpperCase()).collect(Collectors.toList());
   }
   
   public static List<String> get3rdMilleniumBooks(Book[] books) {
-    Stream<String> booksStream = Stream.of(books)
+    return Stream.of(books)
         .filter(book -> book.yearPublished > 1999)
-        .map(book -> book.title);
-
-    return booksStream.collect(Collectors.toList());
+        .map(book -> book.title).collect(Collectors.toList());
   }
 
   public static int getFullPageCount(Book[] books) {
@@ -41,7 +37,6 @@ public class Book {
   public static Book getLargestBook(Book[] books) {
     Optional<Book> biggestBook = Stream.of(books)
         .reduce((prev, curr) -> {
-          System.out.println(prev.pages);
           if (prev.pages > curr.pages) {
             return prev;
           } else {
