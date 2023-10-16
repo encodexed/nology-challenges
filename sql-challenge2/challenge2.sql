@@ -2,7 +2,8 @@
 -- Get the name and country code for 20 cities that have a population greater than 123123, order your results by country_code from A-Z
 SELECT name, countries_code, population FROM cities 
 WHERE population > 123123 
-ORDER BY countries_code;
+ORDER BY countries_code
+LIMIT 20;
 -- Get the name and country code for 13 cities that have a population less than 1231231, order your results by country_code from Z-A
 SELECT name, countries_code, population FROM cities
 WHERE population < 1231231
